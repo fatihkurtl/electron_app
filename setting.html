@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayarlar</title>
+    <link rel="stylesheet" href="styles/settings.css">
+</head>
+<body>
+
+    <form id="settingsForm">
+        <h3>Sunucu Ayarları</h3>
+        <div class="form-group">
+            <label for="serverAddress">Sunucu Adresi:</label>
+            <input type="text" id="serverAddress" name="serverAddress" required>
+        </div>
+        <div class="form-group">
+            <label for="serverPort">Sunucu Portu:</label>
+            <input type="number" id="serverPort" name="serverPort" required>
+        </div>
+        <div class="form-group">
+            <label for="deviceId">Cihaz ID:</label>
+            <input type="text" id="deviceId" name="deviceId" required>
+        </div>
+
+        <h3>Browser Ayarları</h3>
+        <div class="form-group">
+            <label for="browserX">X Konumu:</label>
+            <input type="number" id="browserX" name="browserX" required>
+        </div>
+        <div class="form-group">
+            <label for="browserY">Y Konumu:</label>
+            <input type="number" id="browserY" name="browserY" required>
+        </div>
+        <div class="form-group">
+            <label for="browserWidth">Genişlik:</label>
+            <input type="number" id="browserWidth" name="browserWidth" required>
+        </div>
+        <div class="form-group">
+            <label for="browserHeight">Yükseklik:</label>
+            <input type="number" id="browserHeight" name="browserHeight" required>
+        </div>
+
+        <button type="submit">Kaydet</button>
+    </form>
+    
+    <script src="js/settings.js"></script>
+</body>
+</html>

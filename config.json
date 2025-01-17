@@ -1,0 +1,13 @@
+{
+  "server": {
+    "address": "localhost",
+    "port": 8080,
+    "deviceId": "device-001"
+  },
+  "browser": {
+    "x": 100,
+    "y": 100,
+    "width": 800,
+    "height": 600
+  }
+}
