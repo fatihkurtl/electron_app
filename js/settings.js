@@ -1,6 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
+const configPath = "config.json";
+
 document.getElementById("settingsForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -18,7 +20,7 @@ document.getElementById("settingsForm").addEventListener("submit", function(e) {
         }
     };
 
-    const configPath = "config.json";
+    
     
     try {
         fs.writeFileSync(configPath, JSON.stringify(config, null, 2));
@@ -31,7 +33,6 @@ document.getElementById("settingsForm").addEventListener("submit", function(e) {
 
 window.addEventListener("load", () => {
     try {
-        const configPath = "config.json";
         if (fs.existsSync(configPath)) {
             const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
             
